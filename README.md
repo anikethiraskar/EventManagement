@@ -154,14 +154,12 @@ Password: admin123
 
 ---
 
-## 📸 Screenshots
+## 📸 Screen Video
 
-> You can add screenshots here like:
+> Full Video:
 
 ```markdown
-![Login Page](images/login_screenshot.png)
-
-![Dashboard](images/admin_dashboard.png)
+https://www.linkedin.com/posts/aniket-hiraskar_java-hibernate-jsp-activity-7355545876632621057-m4Cv?utm_source=share&utm_medium=member_desktop&rcm=ACoAADqopeYB9SulqwPuNOp4T0wnINup_p6qTbg
 ```
 
 ---
