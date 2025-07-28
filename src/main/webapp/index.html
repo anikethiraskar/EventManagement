@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventique</title>
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+  <nav class="navbar">
+  <div class="logo-text animated-text"><a href="#home" class="logo">Eventique</a></div>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div id="navLinks" class="nav-links">
+    <a href="#aboutus">About Us</a>
+    <a href="#service">Events</a>
+    <a href="#contact-us">Contact-Us</a>
+    <a href="admin_login.jsp">Admin Login</a>
+    <a href="attendee_login.jsp">Login</a>
+  </div>
+</nav>
+
+
+  <section id="home" class="Hero-Section">
+  <div class="hero-container">
+    <div class="hero-content">
+      <h1 class="hero-title">Built for planners, venues, and dreamers—<span>Eventique</span> streamlines every detail from booking to celebration.</h1>
+      <div class="hero-buttons">
+        <a href="#" class="btn-filled">Start Planning</a>
+        <a href="#" class="btn-outline">Explore Products</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/device.png" alt="Event Laptop" />
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="service" class="services-section">
+  <h2>Our Services</h2>
+
+  <div class="services-container">
+
+    <div class="service-card">
+      <img src="images/venue.jpg" alt="Venue Management" class="service-img" />
+      <h3>Venue Management Software</h3>
+      <p>Simplify event bookings, boost sales, and enhance collaboration among staff and clients.</p>
+      <ul>
+        <li>Banquet Halls</li>
+        <li>Caterers</li>
+        <li>Event Centers</li>
+        <li>Conference Centers</li>
+        <li>Hotels &amp; B&amp;Bs</li>
+        <li>Wedding Venues</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <img src="images/concert-at-venue.jpg" alt="Event Planning" class="service-img" />
+      <h3>Event Planning Software</h3>
+      <p>Track event details in real-time—schedules, registrations, and more. Keep everyone on the same page.</p>
+      <ul>
+        <li>Seminars &amp; Classes</li>
+        <li>Conferences</li>
+        <li>Corporate Events</li>
+        <li>Fundraising Events</li>
+        <li>Galas</li>
+        <li>Weddings</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <img src="images/formal-venue-location-tables.jpg" alt="Floor Plan" class="service-img" />
+      <h3>Floor Plan Software</h3>
+      <p>Create clean, to-scale event designs with easy drag-&amp;-drop tools. Included with all suites or a la carte.</p>
+      <ul>
+        <li>Banquets</li>
+        <li>Boardrooms</li>
+        <li>Classrooms</li>
+        <li>Cocktail Areas</li>
+        <li>Outdoor Spaces</li>
+        <li>Theater Spaces</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+  <section class="features">
+  <h2>Why Choose Eventique?</h2>
+  <div class="feature-cards">
+
+    <div class="feature-card">
+      <img src="images/undraw_reminder_ustg.svg" alt="Real-Time Updates" />
+      <h3>Seamless Planning</h3>
+      <p>From venue selection to guest management, we handle it all.</p>
+    </div>
+
+    <div class="feature-card">
+      <img src="images/undraw_time-management_fedt.svg" alt="Real-Time Updates" />
+      <h3>Real-Time Updates</h3>
+      <p>Keep your guests informed with instant notifications and updates.</p>
+    </div>
+
+    <div class="feature-card">
+      <img src="images/undraw_schedule_ry1w.svg" alt="24/7 Support" />
+      <h3>24/7 Support</h3>
+      <p>Our team is here to assist you at any time, day or night.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <section id="aboutus" class="about-us">
+    <h2>About Us</h2>
+    <p>
+      At <strong>Eventique</strong>, we believe that every moment deserves to be
+      memorable. Whether you're organizing a high-impact corporate seminar or a
+      soulful music night, our platform is built to support events of every scale and
+      style.
+    </p>
+    <p>
+      With streamlined planning tools, intuitive dashboards, and seamless coordination
+      features, we empower planners and venues to focus on what truly matters—creating
+      exceptional experiences.
+    </p>
+
+    <div class="founder-card">
+      <img src="images/Ceo.jpg" alt="Founder of Eventique" class="founder-img" />
+      <div class="founder-info">
+        <h3>Aniket Hiraskar</h3>
+        <p>Founder & CEO</p>
+        <p>
+          Aniket Hiraskar is passionate about technology and events. With over a
+          decade of experience in the industry, he leads Eventique with innovation and
+          dedication to customer success.
+        </p>
+      </div>
+    </div>
+  </section>
+      <section id="contact-us" class="contact-section">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form action="ContactServlet" method="post">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone" placeholder="10-digit phone number" pattern="[0-9]{10}" required>
+
+          <label for="service">Select a Service</label>
+          <select name="service" id="service" required>
+            <option value="" disabled selected>-- Choose a Service --</option>
+            <optgroup label="Venue Management Software">
+              <option>Banquet Halls</option>
+              <option>Caterers</option>
+              <option>Event Centers</option>
+              <option>Conference Centers</option>
+              <option>Hotels & B&Bs</option>
+              <option>Wedding Venues</option>
+            </optgroup>
+            <optgroup label="Event Planning Software">
+              <option>Seminars & Classes</option>
+              <option>Conferences</option>
+              <option>Corporate Events</option>
+              <option>Fundraising Events</option>
+              <option>Galas</option>
+              <option>Weddings</option>
+            </optgroup>
+            <optgroup label="Floor Plan Software">
+              <option>Banquets</option>
+              <option>Boardrooms</option>
+              <option>Classrooms</option>
+              <option>Cocktail Areas</option>
+              <option>Outdoor Spaces</option>
+              <option>Theater Spaces</option>
+            </optgroup>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Write your message here..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Eventique. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+   <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("active");
+    }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const status = urlParams.get('status');
+    if (status === 'success') {
+      alert('Message sent successfully!');
+    } else if (status === 'error') {
+      alert('Failed to send message. Please try again.');
+    }
+  </script>
+
+</body>
+</html>
